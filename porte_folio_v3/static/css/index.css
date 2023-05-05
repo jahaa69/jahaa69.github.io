@@ -1,0 +1,51 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+ body{
+    background-image: url("../img/bc1.png");
+    background-size: cover ;
+    background-repeat:no-repeat ;
+    width: 100vw;
+    height: 100vh;
+ }
+::-webkit-scrollbar {
+ display:  none;
+}
+
+.btn{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btna{
+    background-image: url("../img/boutton.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0px;
+    width: 100vw;
+}
+
+button{
+    display: flex;
+    text-decoration: none;
+    color: white;
+    background: none;
+    border: 0px;
+}
+
+.btnb{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}

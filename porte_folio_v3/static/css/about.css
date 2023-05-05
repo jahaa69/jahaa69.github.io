@@ -1,0 +1,84 @@
+body{
+    color: rgb(245, 186, 61);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("../img/bc3.png");
+    background-size:cover ;
+    background-repeat: no-repeat;
+
+}
+::-webkit-scrollbar {
+    display:  none;
+}
+
+.pdp{
+    display: flex;
+    align-items: center;
+    height: 20vh;
+    width: 100vw;
+}
+.pdpimage{
+    display: flex;
+    background-image: url('../img/bcpdp.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+    width: 20vw;
+  }
+  .texte{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    text-align: justify;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  }
+  .titre{
+    display: flex;
+    align-items: center;
+  }
+  .texte2{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-around;
+    height: 50vh;
+    width: 100vw;
+  }
+
+.gif{
+    position: relative;
+}
+#image-container{
+  transform: rotate(20deg);
+}
+.btna{
+  background-image: url("../img/boutton.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 0px;
+  width: 5vw;
+}
+
+button{
+  display: flex;
+  text-decoration: none;
+  background: none;
+  border: 0px;
+}
+
+.btnb{
+  justify-content: center;
+  display: flex;
+}
+a{
+  color: white;
+  text-decoration: none;
+}

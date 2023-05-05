@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="sablier.svg">
+
+  <!-- [EDIT] Remplis les 3 balises ci-dessous -->
+  <title>Challenge 48h - EQUIPE 04</title>
+  <meta name="description" content="Description de la page pour les moteurs de recherche">
+  <meta name="keywords" content="Mots-clés de la page, séparés par des virgules">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="script.js"></script>
+  <style>
+    .carousel-item {
+      height: fit-content;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- [EDIT] Dans la navbar, précise le nom de ton projet -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="./img/logo/48hwhitelogo.png" alt="" height="40" width="40">YEAR </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#presentation">Présentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#equipe">L'équipe</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#visuels">Visuels</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#liens-pratiques">Liens pratiques</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-5">
+    <div id="presentation" class="col-lg-12 text-center">
+      <h1>Easy Access Room</h1>
+      <br>
+      <br>
+    </div>
+    <div class="row">
+      <div class="col-md-8 d-flex align-items-center">
+        <p style="text-align: justify;">
+          Le projet yEAR (Easy Access Room) vise à améliorer la gestion de salles de cours grâce à la technologie IoT en
+          permettant aux étudiants de savoir en temps réel le nombre de places disponibles dans chaque salle et
+          optimiser leur temps de travail.
+          <br>
+          <br>
+          Il consiste à mettre en place : <br>
+          - Un scanner de badge à l’entrée de chaque salle de cours, avec un écran indiquant le nombre de places encore
+          disponibles à l’intérieur <br>
+          - Une borne à chaque étage du bâtiment qui affiche le numéro de chaque salle à cet étage, son statut et le
+          nombre de places disponibles <br>
+          - Un badge par élève <br>
+          - Un site web <br>
+          <br>
+          Les étudiants scanneront leur badge à l'entrée de la salle, ce qui indiquera leur présence et mettra à jour en
+          temps réel le nombre de personnes présentes par salle. <br>
+          Si un cours a lieu dans cette salle, elle apparaîtra comme indisponible. <br>
+          Si la salle est disponible, il sera possible de réserver une place (dans la limite des places restantes). <br>
+          Si toutes les chaises sont occupées, elle indiquera « complet ». <br>
+          <br>
+          Le système de réservation de salles sera accessible sur le site web, à partir duquel les étudiants pourront se
+          connecter avec leurs identifiants. Une liste des salles du bâtiment triée par étage sera affichée, en plus
+          d’un calendrier hebdomadaire qui récapitule le statut de chaque salle. <br>
+        </p>
+      </div>
+      <div class="col-md-4 d-flex align-items-center">
+        <img src="./img/logo/48hblacklogo.png" alt="mockup" class="img-fluid mx-auto d-block" height="120px"
+          width="120px">
+      </div>
+    </div>
+
+
+    <div id="equipe" class="col-lg-12 text-center mb-5">
+      <br>
+      <br>
+      <h2>L'équipe</h2>
+      <br>
+    </div>
+
+    <!-- [EDIT] Cette section doit présenter l'intégralité des membres du groupe  -->
+    <div class="row justify-content-center mb-5">
+      <!-- [EDIT] PRESENTATION ETUDIANT 1 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card">
+          <img src="./img/tete/louisv2.png" class="card-img-top" alt="Etudiant 1" height="300px"
+            style="object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">BAGILET Louis</h5>
+            <button id="myBtn1"style="border-radius: 50px; border: none; justify-content: space-around; color: white; background-color: dimgray; padding: 10px;">plus d'infos</button>
+            <div id="myModal1" class="modal">
+              <div class="modal-content">
+                <span id="span1" class="close">&times;</span>
+                <div class="modal-center">
+                  <div>
+                    <h2>BAGILET Louis</h2>
+                  </div>
+                  <br>
+                  <div><img src="./img/tete/louisv2.png" alt="Photo" class="img-modal"></div>
+                  <br>
+                  <div class="description-modal">
+                    <p>BAGILET Louis a été chargé de la gestion de la sécurité du projet. Il a réfléchi sur l’ensemble
+                      des aspects
+                      nécessaires pour une réalisation concrète du projet et son implémentation au sein d’une
+                      infrastructure
+                      réseau. Il a géré les solutions les plus optimales pour sécuriser les échanges entre les
+                      dispositifs
+                      connectés de l’IoT.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p class="card-text"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- [EDIT] PRESENTATION ETUDIANT 2 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card">
+          <img src="./img/tete/romainv2.png" class="card-img-top" alt="Etudiant 1" height="300px"
+            style="object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">SILVYLELIGOIS Romain</h5>
+            <button id="myBtn2"
+              style="border-radius: 50px; border: none; justify-content: space-around; color: white; background-color: dimgray; padding: 10px;">plus
+              d'infos</button>
+            <div id="myModal2" class="modal">
+              <div class="modal-content">
+                <span id="span2" class="close">&times;</span>
+                <div class="modal-center">
+                  <div>
+                    <h2>SILVYLELIGOIS Romain</h2>
+                  </div>
+                  <br>
+                  <div><img src="./img/tete/romainv2.png" alt="Photo" class="img-modal"></div>
+                  <br>
+                  <div class="description-modal">
+                    <p>Romain SILVYLELIGOIS a été en charge du projet de développement du site web. Le but du site étant
+                      de faciliter la gestion de réservations des salles, il a créé une interface utilisateur claire et
+                      simple d’utilisation répondant parfaitement aux besoins du projet.
+                      <br>
+                      <br>
+                      L’interface utilisateur permet aux élèves, après connexion via leurs identifiants, d’accéder à une
+                      liste des salles du bâtiment triée par étage et de réserver un créneau horaire à la date et heure
+                      de leur choix. La réservation peut être individuelle mais aussi pour une classe entière. Il est
+                      également possible de visualiser les occupations des salles sous la forme d’un calendrier
+                      hebdomadaire avec les statuts : indisponible (un cours a lieu dans la salle), complet (il n’y a
+                      plus de places vacantes dans la salle) ou disponible.
+                      <br>
+                      <br>
+                      Il a utilisé la plateforme Laravel avec le moteur de rendu de template Blade pour créer la partie
+                      front. Pour le back-office, il a utilisé Laravel avec Filament pour gérer les utilisateurs, les
+                      groupes, les salles et les réservations. Romain a également mis en place une API pour communiquer
+                      avec les Raspberry Pi et les Arduino, ce qui permet de valider la présence d'un utilisateur dans
+                      une salle et d'effectuer des réservations. Il a utilisé une base de données SQL pour stocker les
+                      données nécessaires à la gestion des salles et des réservations.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- [EDIT] PRESENTATION ETUDIANT 3 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card">
+          <img src="./img/tete/arturv2.png" class="card-img-top" alt="Etudiant 1" height="300px"
+            style="object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">PATUREL Arthur</h5>
+            <button id="myBtn3"
+              style="border-radius: 50px; border: none; justify-content: space-around; color: white; background-color: dimgray; padding: 10px;">plus
+              d'infos</button>
+            <div id="myModal3" class="modal">
+              <div class="modal-content">
+                <span id="span3" class="close">&times;</span>
+                <div class="modal-center">
+                  <div>
+                    <h2>PATUREL Arthur</h2>
+                  </div>
+                  <br>
+                  <div><img src="./img/tete/arturv2.png" alt="Photo" class="img-modal"></div>
+                  <br>
+                  <div class="description-modal">
+                    <p>Arthur PATUREL a développé un programme en Arduino qui permet de contrôler l'affichage d'écran
+                      LCD 16x2 et la lecture de badges RFID.
+                      Au démarrage de la carte Arduino Uno WiFi Rev 2, le programme appelle l'API pour récupérer les
+                      données correspondant à la salle devant lequel se trouve l'écran. La capacité de cette salle, le
+                      nombre de places occupées, et le nombre de places restantes sont ainsi visibles sur chaque écran.
+                      Chaque fois qu'un badge RFID est présenté au lecteur, le code appelle de nouveau l'API pour
+                      récupérer cette fois le nom et prénom de la personne associée au badge. Il affiche ces
+                      informations pendant 2 secondes sur l'écran, avant de revenir aux informations concernant la
+                      salle.
+                      L'API est appelée toutes les 60 secondes pour récupérer les dernières informations et les mettre à
+                      jour sur l'écran LCD si nécessaire.
+                      Arthur a permis de gérer les entrées dans une salle en identifiant les personnes à l'aide de
+                      badges RFID et en affichant en temps réel l'état de la salle sur l'écran.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- [EDIT] PRESENTATION ETUDIANT 4 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card">
+          <img src="./img/tete/vincent.png" class="card-img-top" alt="Etudiant 1" height="300px"
+            style="object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">PAIRE Vincent</h5>
+            <button id="myBtn4"
+              style="border-radius: 50px; border: none; justify-content: space-around; color: white; background-color: dimgray; padding: 10px;">plus
+              d'infos</button>
+            <div id="myModal4" class="modal">
+              <div class="modal-content">
+                <span id="span4" class="close">&times;</span>
+                <div class="modal-center">
+                  <div>
+                    <h2>PAIRE Vincent</h2>
+                  </div>
+                  <br>
+                  <div><img src="./img/tete/vincent.png" alt="Photo" class="img-modal"></div>
+                  <br>
+                  <div class="description-modal">
+                    <p>Vincent PAIRE a réalisé l’infrastructure concrète du projet : il s’est chargé de l’entièreté du
+                      réseau local pour permettre la communication entre les différents appareils, y compris les
+                      Arduino.
+                      <br>
+                      <br>
+                      Il a mis en place les Raspberry Pi, branché les écrans tactiles et installé les OS. Il a configuré
+                      le serveur qui héberge l’API et les pages web (qui permettent d’afficher les informations
+                      relatives aux salles d’un étage du bâtiment). Vincent a aidé pour le codage et les branchements
+                      liés aux matériels IoT en proposant des solutions astucieuses pour faciliter la communication
+                      entre les différents appareils.
+                      <br>
+                      Il a aussi hébergé le site vitrine.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- [EDIT] PRESENTATION ETUDIANT 5 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card">
+          <img src="./img/tete/emilev2.png" class="card-img-top" alt="Etudiant 1" height="300px"
+            style="object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">BAILEY Emile</h5>
+            <button id="myBtn5"
+              style="border-radius: 50px; border: none; justify-content: space-around; color: white; background-color: dimgray; padding: 10px;">plus
+              d'infos</button>
+            <div id="myModal5" class="modal">
+              <div class="modal-content">
+                <span id="span5" class="close">&times;</span>
+                <div class="modal-center">
+                  <div>
+                    <h2>BAILEY Emile</h2>
+                  </div>
+                  <br>
+                  <div><img src="./img/tete/emilev2.png" alt="Photo" class="img-modal"></div>
+                  <br>
+                  <div class="description-modal">
+                    <p> Emile BAILEY a développé un programme pour ESP32 qui permet de lire les badges RFID avec un
+                      capteur RC-522, de se connecter au réseau wifi et de communiquer avec un serveur distant en
+                      utilisant des requêtes API personnalisées.
+                      Les badges RFID (qui sont des cartes contenant des puces électroniques qui peuvent être lues sans
+                      contact) sont ainsi utilisées comme moyen d'identification.
+                      Grâce à son travail sur la connexion wifi avec l’ESP32 et l’envoi de requêtes personnalisées
+                      dépendantes du badge utilisé, le programme peut communiquer avec un serveur distant et envoyer des
+                      données spécifiques à chaque badge détecté.
+                      Il a aussi porté le code précédemment réalisé par Arthur PATUREL pour Arduino sur ESP32. Cela
+                      permet d'utiliser le même code pour différents types de microcontrôleurs, ce qui facilite la
+                      portabilité et la réutilisation du code.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- [EDIT] PRESENTATION ETUDIANT 6 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card">
+          <img src="./img/tete/nonov2.png" class="card-img-top" alt="Etudiant 1" height="300px"
+            style="object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">ANNEG Noémie</h5>
+            <button id="myBtn6"
+              style="border-radius: 50px; border: none; justify-content: space-around; color: white; background-color: dimgray; padding: 10px;">plus
+              d'infos</button>
+            <div id="myModal6" class="modal">
+              <div class="modal-content">
+                <span id="span6" class="close">&times;</span>
+                <div class="modal-center">
+                  <div>
+                    <h2>ANNEG Noémie</h2>
+                  </div>
+                  <br>
+                  <div><img src="./img/tete/nonov2.png" alt="Photo" class="img-modal"></div>
+                  <br>
+                  <div class="description-modal">
+                    <p>Noémie ANNEG a développé le système qui permet d’afficher, sur les écrans présents à chaque
+                      étage, les salles disponibles, leurs statuts et le nombre de places libres dans chacune. Elle a
+                      également pris en charge la création du dossier technique du projet, un document qui facilite la
+                      communication et la coordination entre les différentes parties prenantes du projet et favorise la
+                      pérennité du projet.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- [EDIT] PRESENTATION ETUDIANT 7 -->
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+        <div class="card">
+          <img src="./img/tete/bastien.png" class="card-img-top" alt="Etudiant 1" height="300px"
+            style="object-fit: cover;">
+          <div class="card-body">
+            <h5 class="card-title">EXPOSITO Bastien</h5>
+            <button id="myBtn7"
+              style="border-radius: 50px; border: none; justify-content: space-around; color: white; background-color: dimgray; padding: 10px;">plus
+              d'infos</button>
+            <div id="myModal7" class="modal">
+              <div class="modal-content">
+                <span id="span7" class="close">&times;</span>
+                <div class="modal-center">
+                  <div>
+                    <h2>EXPOSITO Bastien</h2>
+                  </div>
+                  <br>
+                  <div><img src="./img/tete/bastien.png" alt="Photo" class="img-modal"></div>
+                  <br>
+                  <div class="description-modal">
+                    <p>EXPOSITO Bastien a réalisé le site vitrine du projet. Dans le cadre de cette mission, il a
+                      identifié avec
+                      précision le rôle de chaque membre du groupe. Il a également recensé les besoins en équipements et
+                      matériels pour assurer le bon déroulement du projet. En plus de ses compétences en développement
+                      web, il a également étendu ses talents en tant que photographe, en réalisant des prises de vue
+                      mettant en valeur le matériel IoT utilisé dans le cadre du projet afin de documenter et détailler
+                      leur fonctionnalités.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <script>
+              let btn1 = document.getElementById("myBtn1");
+              let span1 = document.getElementById("span1");
+              let modal1 = document.getElementById("myModal1");
+              btn1.onclick = function () {
+                modal1.style.display = "block";
+              }
+              span1.onclick = function () {
+                modal1.style.display = "none";
+              }
+              window.onclick = function (event) {
+                if (event.target == modal1) {
+                  modal1.style.display = "none";
+                }
+              }
+
+              let btn2 = document.getElementById("myBtn2");
+              let modal2 = document.getElementById("myModal2");
+              let span2 = document.getElementById("span2");
+              btn2.onclick = function () {
+                modal2.style.display = "block";
+              }
+              span2.onclick = function () {
+                modal2.style.display = "none";
+              }
+              window.onclick = function (event) {
+                if (event.target == modal2) {
+                  modal2.style.display = "none";
+                }
+              }
+
+              let btn3 = document.getElementById("myBtn3");
+              let modal3 = document.getElementById("myModal3");
+              let span3 = document.getElementById("span3");
+              btn3.onclick = function () {
+                modal3.style.display = "block";
+              }
+              span3.onclick = function () {
+                modal3.style.display = "none";
+              }
+              window.onclick = function (event) {
+                if (event.target == modal3) {
+                  modal3.style.display = "none";
+                }
+              }
+
+              let btn4 = document.getElementById("myBtn4");
+              let modal4 = document.getElementById("myModal4");
+              let span4 = document.getElementById("span4");
+              btn4.onclick = function () {
+                modal4.style.display = "block";
+              }
+              span4.onclick = function () {
+                modal4.style.display = "none";
+              }
+              window.onclick = function (event) {
+                if (event.target == modal4) {
+                  modal4.style.display = "none";
+                }
+              }
+
+              let btn5 = document.getElementById("myBtn5");
+              let modal5 = document.getElementById("myModal5");
+              let span5 = document.getElementById("span5");
+              btn5.onclick = function () {
+                modal5.style.display = "block";
+              }
+              span5.onclick = function () {
+                modal5.style.display = "none";
+              }
+              window.onclick = function (event) {
+                if (event.target == modal5) {
+                  modal5.style.display = "none";
+                }
+              }
+
+              let btn6 = document.getElementById("myBtn6");
+              let modal6 = document.getElementById("myModal6");
+              let span6 = document.getElementById("span6");
+              btn6.onclick = function () {
+                modal6.style.display = "block";
+              }
+              span6.onclick = function () {
+                modal6.style.display = "none";
+              }
+              window.onclick = function (event) {
+                if (event.target == modal6) {
+                  modal6.style.display = "none";
+                }
+              }
+
+              let btn7 = document.getElementById("myBtn7");
+              let modal7 = document.getElementById("myModal7");
+              let span7 = document.getElementById("span7");
+              btn7.onclick = function () {
+                modal7.style.display = "block";
+              }
+              span7.onclick = function () {
+                modal7.style.display = "none";
+              }
+              window.onclick = function (event) {
+                if (event.target == modal7) {
+                  modal7.style.display = "none";
+                }
+              }
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="visuels" class="col-lg-12 text-center mb-5">
+      <h2>Projet yEAR</h2>
+    </div>
+
+    <!-- [EDIT] Remplis le carousel avec des screenshots de ton projet accompagnés d'une légende -->
+    <div id="carouselExampleCaptions" class="carousel slide mb-5">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+          aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+          aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7"
+          aria-label="Slide 8"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="8"
+          aria-label="Slide 9"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="9"
+          aria-label="Slide 10"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/vitrine/all.png" class="d-block w-100 h-100" alt="screenshot1">
+          <div class="carousel-caption d-none d-md-block"
+            style="color: rgb(0, 0, 0);">
+            <h3>Page web</h3>
+            <p>La page d’accueil affichant les salles triées par étage et contenant des boutons permettant la réservation d’une salle à un créneau horaire précis </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/vitrine/calandrier.png" class="d-block w-100" alt="screenshot2">
+          <div class="carousel-caption d-none d-md-block"
+            style="color: rgb(0, 0, 0);">
+            <h3>Calendrier en ligne</h3>
+            <p>Le calendrier hebdomadaire indiquant l’occupation de chaque salle </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/vitrine/login.png" class="d-block w-100 h-100" alt="screenshot3">
+          <div class="carousel-caption d-none d-md-block"
+            style="color: rgb(0, 0, 0);">
+            <h3>Login</h3>
+            <p>Une connexion avec des identifiants (gérés dans une base de données SQL) qui permet d’accéder au site web </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/vitrine/screen-all.png" class="d-block mx-auto w-50 h-50" alt="screenshot4">
+          <div class="carousel-caption d-none d-md-block" style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0); width: 50%; bottom: 0; left: 50%; transform: translate(-50%, 0%);" >
+            <h3>Ecran à l'accueil</h3>
+            <p>Au rez-de-chaussée, l’écran est tactile afin de scroller pour voir les salles sur l’ensemble du bâtiment </p>
+          </div>
+        </div>
+
+
+        <div class="carousel-item">
+          <img src="./img/vitrine/screen-rdc.png" class="d-block mx-auto w-50 h-50" alt="screenshot5">
+          <div class="carousel-caption d-none d-md-block" style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0); width: 50%; bottom: 0; left: 50%; transform: translate(-50%, 0%);" >
+            <h3>Ecran à chaque étage</h3>
+            <p>Ecran présent à chaque étage pour afficher les informations de chaque
+              salle</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/vitrine/raspberry_screen.jpg" class="d-block mx-auto w-50 h-50" alt="screenshot5">
+          <div class="carousel-caption d-none d-md-block"
+            style="color: rgb(0, 0, 0);">
+            <h3>Montage écran plus raspberry</h3>
+            <p>A chaque étage, un écran led est branché sur un raspberry et affiche les salles présentes à cet étage, leurs statuts et le nombre de places disponibles </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/vitrine/capteur_badge.jpg" class="d-block mx-auto w-50 h-50" alt="screenshot5">
+          <div class="carousel-caption d-none d-md-block"
+            style="color: rgb(0, 0, 0); ">
+            <h3>Montage capteur</h3>
+            <p>Devant chaque salle, il y a un scanner de badge. L’écran LCD affiche le nombre d’élèves présents, la capacité totale de la pièce sur la première ligne et de places disponibles sur la deuxième ligne.
+              Lorsqu’un étudiant badge sur le lecteur RFID, la carte contrôleur Arduino uno wifi r2
+              </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/vitrine/badge.jpg" class="d-block mx-auto w-50 h-60" alt="screenshot5">
+          <div class="carousel-caption d-none d-md-block"
+            style="color: rgb(0, 0, 0);">
+            <h3>Badge électronique avec identification individuelle</h3>
+            <p>Chaque étudiant possède un badge nominatif contenant son id personnel </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/vitrine/modul-complémentaire1.jpg" class="d-block mx-auto w-50 h-60" alt="screenshot5">
+          <div class="carousel-caption d-none d-md-block"
+            style="color: rgb(0, 0, 0);">
+            <h3>Petit mudule modul complémentaire</h3>
+            <p>Les modules qui auraient été utilisés si le temps avait permis de réaliser d’ajouter des LED RGB pour mettre une couleur si le badge est refusé ou accepté, un détecteur de luminosité et un détecteur de température.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/vitrine/modul-complémentaire2.jpg" class="d-block mx-auto w-50 h-60" alt="screenshot5">
+          <div class="carousel-caption d-none d-md-block"
+            style="color: rgb(0, 0, 0);">
+            <h3>Petit mudule complémentaire</h3>
+            <p>Les buzzer actif et passif sont des composants complémentaires au lecteur RFID qui génére un signal sonore lorsqu’un badge est scanné afin de pour signaler la bonne validation du badge </p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev -icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div id="liens-pratiques" class="col-lg-12 text-center mb-5">
+      <h2>LIENS PRATIQUES</h2>
+    </div>
+    <!-- [EDIT] Mets le lien du Github du projet et du PDF du dossier technique -->
+
+    <div class="row justify-content-center mb-5">
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Github</h5>
+            <p class="card-text">Consultez notre code source et notre organisation sur Github.</p>
+            <a href="https://github.com/AnnegNoemie/Challenge48.git" class="btn btn-primary">Visiter</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">PDF</h5>
+            <p class="card-text">Téléchargez notre dossier technique au format PDF.</p>
+            <a href="mondossiertechnique.pdf" download="mondossiertechnique.pdf" class="btn btn-primary">Télécharger</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="text-center mb-3">
+      Fait avec 🍆 💦 pour le Challenge 48h
+    </div>
+  </div>
+</body>
+
+<footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+</footer>
+
+</html>

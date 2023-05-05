@@ -1,0 +1,48 @@
+body {
+    background: #383838;
+}
+
+#gameboard{
+    width: 50vw;
+    height: 50vw;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(10, 4vw);
+    grid-template-rows: repeat(10, 4vw);
+}
+
+#gameboard>div{
+    position: absolute;
+    height: 4vw;
+    /* border:5px solid black; */
+
+}
+
+.divall{
+    width: auto;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(10, 4vw);
+    grid-template-rows: repeat(10, 4vw);
+    border:1px solid black;
+    color: black;
+
+}
+#regles{
+    display: flex;
+    justify-content: end;
+    height: 10vh;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+button{
+    text-decoration: none;
+    background: none;
+    border: 0px;
+}
+::-webkit-scrollbar {
+    display:  none;
+}

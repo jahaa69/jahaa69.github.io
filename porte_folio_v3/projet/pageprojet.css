@@ -1,0 +1,55 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+ body{  
+    background-image: url("../static/img/bc2.png");
+    background-size: cover ;
+    background-repeat:no-repeat ;
+}
+
+::-webkit-scrollbar {
+ display:  none;
+}
+
+.up{
+    display: flex;
+    justify-content: center;
+}
+.bouttonup{
+    border-width: 0px;
+    color: white;
+}
+.arbre_ligne1{
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+}
+button{
+    text-decoration: none;
+    background: none;
+    border: 0px;
+}
+
+.btnb{
+    display: flex;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+    color:white
+}
+
+.bouttonbox{
+    display:flex;
+    width: 8vw;
+    height: 5vh;
+    background-image:url("../static/img/boutton.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: space-around;
+}

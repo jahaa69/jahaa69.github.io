@@ -1,0 +1,24 @@
+
+=============================================================================================06/04/2023
+Vous utiliserez une requestAnimationFrame boucle récursive.
+Vous devez utiliser un CSS grid pour implémenter le jeu.
+Un élément HTML représentant une case à déplacer, doit être créé ou déplacé à chaque fois qu'il est en colision avec le joueur.
+Des éléments HTML sont créés à chaque fois qu'un niveau est généré.
+                                                                                                                                         detect quand une touche flecher et enfoncer
+Lorsqu'une touche fléchée est enfoncée, le joueur doit se déplacer.
+Le joueur et la boîte ne peuvent pas traverser le mur et la boîte.
+Le jeu ne peut pas démarrer s'il n'y a pas de boxeur dans le niveau.
+Lorsqu'une case est sur une position correcte, l'élément doit changer de couleur.
+vous devez faire un bouton de réinitialisation qui permet au joueur de redémarrer le niveau.
+=============================================================================================07/04/2023
+Vous utiliserez une requestAnimationFrame boucle récursive.
+Vous devez utiliser un CSS grid pour implémenter le jeu.
+Un élément HTML représentant une case à déplacer, doit être créé ou déplacé à chaque fois qu'il est en colision avec le joueur.
+Des éléments HTML sont créés à chaque fois qu'un niveau est généré.
+                                                                                                                                         detect quand une touche flecher et enfoncer
+                                                                                                                                         Lorsqu'une touche fléchée est enfoncée, le joueur doit se déplacer.
+                                                                                                                                         Le joueur et la boîte ne peuvent pas traverser le mur et la boîte.
+Le jeu ne peut pas démarrer s'il n'y a pas de boxeur dans le niveau.
+Lorsqu'une case est sur une position correcte, l'élément doit changer de couleur.
+                                                                                                                                         vous devez faire un bouton de réinitialisation qui permet au joueur de redémarrer le niveau.
+=============================================================================================08/04/2023
