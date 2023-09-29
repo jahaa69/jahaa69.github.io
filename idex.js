@@ -51,10 +51,7 @@ async function createCard(data) {
 
 async function main() {
   const data = await api();
-
-  // Filtre les dépôts créés par l'utilisateur actuel
-  const myRepos = data.filter((repo) => repo.owner.login === 'jahaa69');
-
+  const myRepos = data.filter((repo) => repo.fork === false);
   // Crée une carte pour chaque dépôt
   for (const repo of myRepos) {
     await createCard(repo);
