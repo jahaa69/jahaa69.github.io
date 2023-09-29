@@ -1,0 +1,111 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.page{
+    width: 99.99vw;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+.header{
+    width: 99.9%;
+    height: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000000;
+}
+.menu{
+    width: 99.9%;
+    height: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #000000;
+}
+.boutonM{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #000000;
+    align-items: center;
+    cursor: pointer;
+    background-color: white;
+}
+.boutonM:hover{
+    background-color: #808080;
+    color: white;
+    transition: 0.5s;
+}
+.bodypage{
+    width: 99.9%;
+    height: 76%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000000;
+}
+.bodycard{
+    filter: blur(5px);
+    width: 25%;
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    filter: blur(10px);
+    z-index: 0;
+    transition: backdrop-filter 10s ease-in-out;
+
+}
+.bodycard:hover{
+    filter: blur(0px);
+    z-index: 1;
+    transition: backdrop-filter 10s ease-in-out;
+    zoom: 1.5;
+}
+
+
+.affiche{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.titre{
+    display: flex;
+    height: 5%;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer{
+    display: flex;
+    background-color: #808080;
+    width: 99.9%;
+    height: 13.2%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.contact{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.button{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: #808080;
+    box-shadow: inset -20px -20px 60px #6d6d6d,
+            inset 20px 20px 60px #939393;
+    align-items: center;
+    justify-content: center;
+}
