@@ -49,12 +49,24 @@ async function createCard(data) {
   projetP.appendChild(card);
 }
 
-async function main() {
-  const data = await api();
-  const myRepos = data.filter((repo) => repo.fork === false);
-  // Crée une carte pour chaque dépôt
-  for (const repo of myRepos) {
-    await createCard(repo);
+function main() {
+  api()
+    .then((data) => {
+      data.forEach((repo) => {
+        createCard(repo);
+      });
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+}
+
+function error(){
+  // si le site ne communique pas avec l'API sinon executé main()
+  if(!api()){
+    console.log('error');
+  }else{
+    main();
   }
 }
 
@@ -62,4 +74,4 @@ async function main() {
 projetpage();
 homepage();
 api();
-main();
+error();
