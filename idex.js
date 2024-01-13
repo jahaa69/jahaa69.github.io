@@ -95,11 +95,9 @@ function carte1() {
   const card = document.createElement('div');
   card.classList.add('card');
   card.innerHTML = `
-  <h3 style="font-family: monospace;"></h3>
-  <h1 style="font-family: monospace;">desolé mais github bloque les api et donc il
-  met impossible pour le moemnt de vous montré mes projet sur cette page je vous 
-  laisserais voir mes repos github grace a ce lien  </h1>
-  <a href="">Go to repo</a>`;
+  <h3 style="font-family: monospace;">C++</h3>
+  <h1 style="font-family: monospace;">Armebot</h1>
+  <a href="https://github.com/jahaa69/ArmBot">Go to repo</a>`;
   conteneur3d.appendChild(card);
 }
 
@@ -107,11 +105,9 @@ function carte2() {
   const card = document.createElement('div');
   card.classList.add('card');
   card.innerHTML = `
-  <h3 style="font-family: monospace;"></h3>
-  <h1 style="font-family: monospace;">desolé mais github bloque les api et donc il
-  met impossible pour le moemnt de vous montré mes projet sur cette page je vous 
-  laisserais voir mes repos github grace a ce lien  </h1>
-  <a href="">Go to repo</a>`;
+  <h3 style="font-family: monospace;">PowerShell</h3>
+  <h1 style="font-family: monospace;">Bit-Buncker</h1>
+  <a href="https://github.com/jahaa69/Bit-Bunker-V2">Go to repo</a>`;
   conteneur3d.appendChild(card);
 }
 
@@ -119,11 +115,9 @@ function carte3() {
   const card = document.createElement('div');
   card.classList.add('card');
   card.innerHTML = `
-  <h3 style="font-family: monospace;"></h3>
-  <h1 style="font-family: monospace;">desolé mais github bloque les api et donc il
-  met impossible pour le moemnt de vous montré mes projet sur cette page je vous 
-  laisserais voir mes repos github grace a ce lien  </h1>
-  <a href="">Go to repo</a>`;
+  <h3 style="font-family: monospace;">Java Script</h3>
+  <h1 style="font-family: monospace;">Boxxle</h1>
+  <a href="https://github.com/jahaa69/boxxle">Go to repo</a>`;
   conteneur3d.appendChild(card);
 }
 
