@@ -94,6 +94,7 @@ function defaultCards() {
 function carte1() {
   const card = document.createElement('div');
   card.classList.add('card');
+  card.id = 'card';
   card.innerHTML = `
   <h3 style="font-family: monospace;">C++</h3>
   <h1 style="font-family: monospace;">Armebot</h1>
@@ -104,6 +105,7 @@ function carte1() {
 function carte2() {
   const card = document.createElement('div');
   card.classList.add('card');
+  card.id = 'card';
   card.innerHTML = `
   <h3 style="font-family: monospace;">PowerShell</h3>
   <h1 style="font-family: monospace;">Bit-Buncker</h1>
@@ -114,6 +116,7 @@ function carte2() {
 function carte3() {
   const card = document.createElement('div');
   card.classList.add('card');
+  card.id = 'card';
   card.innerHTML = `
   <h3 style="font-family: monospace;">Java Script</h3>
   <h1 style="font-family: monospace;">Boxxle</h1>
