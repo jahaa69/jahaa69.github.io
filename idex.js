@@ -54,10 +54,10 @@ function noData() {
   card.classList.add('card');
   card.innerHTML = `
   <h3 style="font-family: monospace;">Erreur</h3>
-  <h1 style="font-family: monospace;">desolé mais github bloque les api et donc il
+  <h1 style="font-family: monospace; text-align: center;">desolé mais github bloque les api et donc il
   met impossible pour le moemnt de vous montré mes projet sur cette page je vous 
   laisserais voir mes repos github grace a ce lien  </h1>
-  <a href="https://github.com/jahaa69">Go to repo</a>`;
+  <h2><a href="https://github.com/jahaa69" style="font-family: monospace; text-align: center;" font">Go to repo</a></h2>`;
   projetP.appendChild(card);
 }
 
