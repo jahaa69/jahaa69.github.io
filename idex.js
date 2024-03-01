@@ -6,6 +6,50 @@ const projetP = document.getElementById('projetP');
 
 projetP.style.display = 'none';
 
+async function api() {
+  try {
+    const response = await fetch(API_URL, {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+
+    if (!response.ok) {
+      throw new Error('Failed to fetch data');
+    }
+
+    const data = await response.json();
+    return data;
+  } catch (error) {
+    console.error('Error fetching data:', error);
+    return [];
+  }
+}
+
+async function createCard(data) {
+  const projetContainer = document.getElementById('projetP');
+  for (let i = 0; i < data.length; i++) {
+    if (data[i].name !== 'jahaa69.github.io') {
+      const card = document.createElement('div');
+      card.classList.add('card');
+      card.innerHTML = `
+        <div class="card-body">
+          <h5 class="card-title">${data[i].name}</h5>
+          <p class="card-text">${data[i].description}</p>
+          <a href="${data[i].html_url}" class="btn btn-primary">Voir le repo</a>
+        </div>
+      `;
+      projetContainer.appendChild(card);
+    }
+  }
+}
+
+async function main() {
+  const data = await api();
+  createCard(data);
+}
+
 function projetpage() {
   projetB.addEventListener('click', () => {
     homeP.style.display = 'none';
@@ -20,47 +64,7 @@ function homepage() {
   });
 }
 
-
 const API_URL = 'https://api.github.com/users/jahaa69/repos';
-const ACCESS_TOKEN = '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';
-async function api() {
-  const response = await fetch(API_URL, {
-    method: 'GET',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `token ${ACCESS_TOKEN}`,
-    },
-  });
-  const data = await response.json();
-  return data;
-}
-
-async function createCard(data) {
-  const card = document.createElement('div');
-  card.classList.add('card');
-  card.innerHTML = `
-    <div class="carte-body">
-    <h5 class="card-title">${data.name}</h5>
-    <p class="card-text">${data.description}</p>
-    <a href="${data.html_url}" class="btn btn-primary">Go to repo</a>
-    </div>
-    `;
-  projetP.appendChild(card);
-}
-
-async function main() {
-  const data = await api();
-  createCard(data);
-}
-
-async function error() {
-  try {
-    const data = await api();
-    createCard(data);
-  } catch (error) {
-    console.log(error);
-  }
-}
 
 projetpage();
 homepage();
