@@ -11,13 +11,7 @@
 
 }
 
-<<<<<<< HEAD
-.card{
-    width: 15%;
-    height: 30%;
-=======
 .carte-body{
->>>>>>> a28893c32cce317de08d4a2cc838ed5c0da30218
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -37,10 +31,7 @@ a{
     text-decoration: none;
     color: black;
 }
-<<<<<<< HEAD
-=======
 .card{
     display: flex;
     height: 10%;
 }
->>>>>>> a28893c32cce317de08d4a2cc838ed5c0da30218

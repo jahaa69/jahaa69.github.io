@@ -68,8 +68,6 @@ function homepage() {
 }
 
 const API_URL = 'https://api.github.com/users/jahaa69/repos';
-<<<<<<< HEAD
-=======
 const ACCESS_TOKEN = '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';
 
 const tab =[];
@@ -264,7 +262,6 @@ function titlePage() {
     addLetters(i);
   }
 }
->>>>>>> a28893c32cce317de08d4a2cc838ed5c0da30218
 
 function blink() {
   const cursor = document.getElementById('cursor');
@@ -280,10 +277,6 @@ function blink() {
 blink();
 api();
 projetpage();
-<<<<<<< HEAD
-homepage();
-main();
-=======
 titlePage();
 homepage();
->>>>>>> a28893c32cce317de08d4a2cc838ed5c0da30218
+
