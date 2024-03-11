@@ -1,5 +1,5 @@
 const API_URL = 'https://api.github.com/users/jahaa69/repos';
-const ACCESS_TOKEN = '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';
+const ACCESS_TOKEN = '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';
 const tab = [];
 
 
