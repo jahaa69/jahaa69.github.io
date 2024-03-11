@@ -1,5 +1,5 @@
 const API_URL = 'https://api.github.com/users/jahaa69/repos';
-const ACCESS_TOKEN = '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';
+const ACCESS_TOKEN = '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';
 const tab = [];
 
 
@@ -28,17 +28,26 @@ function api() {
         data.forEach((repo) => {
           tab.push(repo);
         });
-        createCards(data);
+        connectedOrNot(data);
         logo(data);
       } else {
         throw new Error('Data is not an array');
       }
     })
     .catch((error) => {
+      console.error('Error:', error);
       noConnexion();
       console.log("test");
-      // console.error('Error:', error);
     });
+}
+
+
+function connectedOrNot(data) {
+  if (data.length === 0) {
+    noConnexion();
+  } else {
+    createCards(data);
+  }
 }
 
 function createCards(data) {
