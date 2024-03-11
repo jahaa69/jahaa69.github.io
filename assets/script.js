@@ -1,5 +1,5 @@
 const API_URL = 'https://api.github.com/users/jahaa69/repos';
-const ACCESS_TOKEN = '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';
+const ACCESS_TOKEN = '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';
 const tab = [];
 
 
@@ -44,14 +44,15 @@ function api() {
 
 function connectedOrNot(data) {
   if (data.length === 0) {
-    noConnexion();
   } else {
-    createCards(data);
+    noConnexion();
+    // createCards(data);
   }
 }
 
 function createCards(data) {
   const projetPageDiv = document.getElementById('projetPage');
+
   data.forEach((repo) => {
     if (repo.name === 'jahaa69.github.io') {
       return;
@@ -89,14 +90,40 @@ function createCards(data) {
 
 function noConnexion() {
   const projetPageDiv = document.getElementById('projetPage');
+  projetPageDiv.style.display = 'flex';
+  projetPageDiv.style.gridTemplateColumns = 'none';
+  
+
   const noConnexionDiv = document.createElement('div');
+  const h1Element = document.createElement('h1');
+  const imgElement = document.createElement('img');
+  const clickElement = document.createElement('div');
+
+  clickElement.style.display = 'flex';
+  clickElement.style.flexDirection = 'row';
+  clickElement.style.height = '5%';
+  clickElement.style.backgroundColor = 'black';
+  clickElement.style.justifyContent = 'center';
+  clickElement.style.alignItems = 'center';
+  clickElement.style.cursor = 'pointer';
+  clickElement.style.backgroundColor = '#272626';
+
+
+  imgElement.src = 'assets/img/logoGithub.png';
+  imgElement.alt = 'image de connexion';
+  imgElement.className = 'logo';
+
   noConnexionDiv.className = 'noConnexion';
-  const aEllement = document.createElement('a');
-  aEllement.textContent = 'lien github';
-  aEllement.href = 'https://github.com/jahaa69';
-  aEllement.target = '_blank';
-  aEllement.rel = 'noopener noreferrer';
-  noConnexionDiv.appendChild(aEllement);
+  h1Element.textContent = 'lien des projets';
+  h1Element.style.color = 'white';
+  
+  clickElement.appendChild(h1Element);
+  clickElement.appendChild(imgElement);
+  clickElement.onclick = () => {
+    window.open('https://github.com/jahaa69', '_blank');
+    
+  }
+  noConnexionDiv.appendChild(clickElement);
   projetPageDiv.appendChild(noConnexionDiv);
 }
 

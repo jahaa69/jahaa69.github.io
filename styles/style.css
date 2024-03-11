@@ -98,6 +98,7 @@ a{
     gap: 5px;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 .gridProjet{
     display: flex;
@@ -108,22 +109,22 @@ a{
 }
 .noConnexion{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 20%;
     height: 100vh;
 }
-.ProjetCard{
+.noConnexion{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #8080806e;
-    margin: 1rem;
-    padding: 1rem;
-    border-radius: 10px;
-    width: 500px;
+}
+.ProjetCard{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
 }
 .mignature{
