@@ -1,5 +1,5 @@
 const API_URL = 'https://api.github.com/users/jahaa69/repos';
-const ACCESS_TOKEN = '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';
+const ACCESS_TOKEN = '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';
 const tab = [];
 
 
@@ -17,15 +17,26 @@ function api() {
       Authorization: `token ${ACCESS_TOKEN}`,
     },
   })
-    .then((response) => response.json())
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`HTTP error! Status: ${response.status}`);
+      }
+      return response.json();
+    })
     .then((data) => {
-      data.forEach((repo) => {
-        tab.push(repo);
-      });
-      createCards(data);
-      logo(data);
+      if (Array.isArray(data)) {
+        data.forEach((repo) => {
+          tab.push(repo);
+        });
+        createCards(data);
+        logo(data);
+      } else {
+        throw new Error('Data is not an array');
+      }
     })
     .catch((error) => {
+      noConnexion();
+      console.log("test");
       console.error('Error:', error);
     });
 }
@@ -65,6 +76,19 @@ function createCards(data) {
     gridProjetDiv.appendChild(projetCardDiv);
     projetPageDiv.appendChild(gridProjetDiv);
   });
+}
+
+function noConnexion() {
+  const projetPageDiv = document.getElementById('projetPage');
+  const noConnexionDiv = document.createElement('div');
+  noConnexionDiv.className = 'noConnexion';
+  const aEllement = document.createElement('a');
+  aEllement.textContent = 'lien github';
+  aEllement.href = 'https://github.com/jahaa69';
+  aEllement.target = '_blank';
+  aEllement.rel = 'noopener noreferrer';
+  noConnexionDiv.appendChild(aEllement);
+  projetPageDiv.appendChild(noConnexionDiv);
 }
 
 function logo(data) {
