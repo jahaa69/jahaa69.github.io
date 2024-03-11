@@ -37,7 +37,7 @@ function api() {
     .catch((error) => {
       noConnexion();
       console.log("test");
-      console.error('Error:', error);
+      // console.error('Error:', error);
     });
 }
 
