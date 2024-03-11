@@ -44,9 +44,9 @@ function api() {
 
 function connectedOrNot(data) {
   if (data.length === 0) {
-  } else {
     noConnexion();
-    // createCards(data);
+  } else {
+    createCards(data);
   }
 }
 
