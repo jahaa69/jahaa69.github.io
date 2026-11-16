@@ -1,211 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Jahaa - IoT & Embedded Systems Developer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Développement web, modélisation 3D mécanique, impression 3D à la demande et maintenance informatique — Bastien Exposito, Lyon.">
+  <title>Bastien Exposito — Dev · 3D · Maintenance</title>
+  <link rel="stylesheet" href="./styles/style.css">
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
-
 <body>
-    <div class="grid-background"></div>
 
-    <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="nav-brand">
-                    <img id="avatar" class="avatar" alt="Avatar">
-                    <div class="brand-text">
-                        <svg class="terminal-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="4 17 10 11 4 5"></polyline>
-                            <line x1="12" y1="19" x2="20" y2="19"></line>
-                        </svg>
-                        <span>Jahaa</span>
-                    </div>
-                </div>
+  <!-- ── HEADER ── -->
+  <header id="header">
+    <nav>
+      <a href="#home" class="nav-logo">
+        <span id="nav-avatar" class="nav-avatar-wrap"></span>
+        <span class="nav-logo-text">B.E</span>
+      </a>
+      <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" role="list">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#realisations">Réalisations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-                <ul class="nav-links desktop-nav">
-                    <li class="nav-case" data-scroll="home">Home</li>
-                    <li class="nav-case" data-scroll="projects">Projects</li>
-                    <li class="nav-case" data-scroll="contact">Contact</li>
-                </ul>
+  <!-- ── HERO ── -->
+  <section id="home" class="hero">
+    <div class="hero-grid-bg" aria-hidden="true"></div>
+    <div class="hero-glow" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="hero-tag">Développement · Modélisation 3D · Maintenance</p>
+      <h1>Donnez vie à<br><span class="accent">vos projets</span></h1>
+      <p class="hero-sub">Solutions techniques sur mesure — du code à la pièce mécanique, je m'occupe de l'ensemble.</p>
+      <a href="#services" class="btn-primary">Découvrir les services</a>
+    </div>
+  </section>
 
-                <button class="mobile-menu-btn" id="mobileMenuBtn" title="Toggle mobile menu">
-                    <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <line x1="3" y1="12" x2="21" y2="12"></line>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                        <line x1="3" y1="18" x2="21" y2="18"></line>
-                    </svg>
-                    <svg class="close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
-                        <line x1="18" y1="6" x2="6" y2="18"></line>
-                        <line x1="6" y1="6" x2="18" y2="18"></line>
-                    </svg>
-                </button>
-            </div>
+  <!-- ── SERVICES ── -->
+  <section id="services" class="services">
+    <h2 class="section-title">Services</h2>
+    <div class="services-grid">
 
-            <div class="mobile-menu" id="mobileMenu">
-                <ul class="mobile-nav-links">
-                    <li class="nav-case" data-scroll="home">Home</li>
-                    <li class="nav-case" data-scroll="projects">Projects</li>
-                    <li class="nav-case" data-scroll="contact">Contact</li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <main>
-        <section id="home" class="hero-section">
-            <div class="hero-container">
-                <div class="terminal-window">
-                    <div class="terminal-header">
-                        <div class="terminal-buttons">
-                            <span class="terminal-btn red"></span>
-                            <span class="terminal-btn yellow"></span>
-                            <span class="terminal-btn green"></span>
-                        </div>
-                    </div>
-
-                    <div class="terminal-content">
-                        <div class="terminal-line">
-                            <span class="prompt">~</span>
-                            <span class="dollar">$</span>
-                            <span class="command">cat</span>
-                            <span>introduction.txt</span>
-                        </div>
-
-                        <h1 class="hero-title">
-                            Hi, I'm <span class="gradient-text">Jahaa</span>
-                        </h1>
-
-                        <div class="badges">
-                            <span class="badge">
-                                <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect>
-                                    <rect x="9" y="9" width="6" height="6"></rect>
-                                    <line x1="9" y1="1" x2="9" y2="4"></line>
-                                    <line x1="15" y1="1" x2="15" y2="4"></line>
-                                    <line x1="9" y1="20" x2="9" y2="23"></line>
-                                    <line x1="15" y1="20" x2="15" y2="23"></line>
-                                    <line x1="20" y1="9" x2="23" y2="9"></line>
-                                    <line x1="20" y1="14" x2="23" y2="14"></line>
-                                    <line x1="1" y1="9" x2="4" y2="9"></line>
-                                    <line x1="1" y1="14" x2="4" y2="14"></line>
-                                </svg>
-                                <span>IoT Developer</span>
-                            </span>
-                            <span class="badge">
-                                <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M5 12.55a11 11 0 0 1 14.08 0"></path>
-                                    <path d="M1.42 9a16 16 0 0 1 21.16 0"></path>
-                                    <path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path>
-                                    <line x1="12" y1="20" x2="12.01" y2="20"></line>
-                                </svg>
-                                <span>Embedded Systems</span>
-                            </span>
-                            <span class="badge">
-                                <svg class="badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
-                                    <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
-                                    <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
-                                </svg>
-                                <span>Web Developer</span>
-                            </span>
-                        </div>
-
-                        <p class="hero-description">
-                            I'm a student developer in BAC+3 year at
-                            <a href="https://welcome.ynov.com/ecole/informatique" target="_blank" rel="noopener noreferrer" class="text-link">Lyon Ynov Campus</a>.
-                            I’m a young web and IoT developer from Lyon, looking for a work-study opportunity that will allow me to strengthen my skills and learn new ones.
-                        </p>
-
-                        <div class="hero-actions">
-                            <a href="https://www.linkedin.com/in/bastien-exposito/" target="_blank" rel="noopener" class="btn btn-primary">
-                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                                    <rect x="2" y="9" width="4" height="12"></rect>
-                                    <circle cx="4" cy="4" r="2"></circle>
-                                </svg>
-                                <span>LinkedIn</span>
-                            </a>
-                            <a href="https://github.com/jahaa69" target="_blank" rel="noopener" class="btn btn-secondary">
-                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-                                </svg>
-                                <span>GitHub</span>
-                            </a>
-                            <a href="/assets/img/cv.pdf" download class="btn btn-secondary">
-                                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                                    <polyline points="7 10 12 15 17 10"></polyline>
-                                    <line x1="12" y1="15" x2="12" y2="3"></line>
-                                </svg>
-                                <span>Download CV</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects" class="projects-section">
-            <div class="section-container">
-                <div class="section-header">
-                    <h2 class="section-title">Projects</h2>
-                    <p class="section-subtitle">// Explore my work in embedded systems, web development, and infrastructure</p>
-                </div>
-
-                <div id="projectsContainer" class="projects-content">
-                    <div class="loading-spinner">
-                        <div class="spinner"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact-section">
-            <div class="section-container-small">
-                <div class="section-header">
-                    <h2 class="section-title">Get In Touch</h2>
-                    <p class="section-subtitle">// Let's build something together</p>
-                </div>
-
-                <div class="contact-form-container">
-                    <form id="contactForm" class="contact-form">
-                        <div class="form-group">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" id="name" name="name" required class="form-input">
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" id="email" name="email" required class="form-input">
-                        </div>
-                        <div class="form-group">
-                            <label for="subject" class="form-label">Subject</label>
-                            <input type="text" id="subject" name="subject" required class="form-input">
-                        </div>
-                        <div class="form-group">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea id="message" name="message" required rows="6" class="form-input form-textarea"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-full">
-                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                                <polyline points="22,6 12,13 2,6"></polyline>
-                            </svg>
-                            <span>Send Message</span>
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2024 Jahaa. Built with HTML, CSS & JavaScript</p>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="16 18 22 12 16 6"></polyline>
+            <polyline points="8 6 2 12 8 18"></polyline>
+          </svg>
         </div>
-    </footer>
+        <h3>Développement Web</h3>
+        <div class="service-divider"></div>
+        <p>Sites vitrine, applications web et interfaces sur mesure. Du design au déploiement.</p>
+        <a href="#contact" class="btn-outline" data-service="dev">Demander un devis</a>
+      </div>
 
-    <script src="assets/script.js"></script>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="3"></circle>
+            <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+          </svg>
+        </div>
+        <h3>Modélisation 3D</h3>
+        <div class="service-divider"></div>
+        <p>Conception de pièces mécaniques précises à partir de vos plans, croquis ou mesures. Fichiers STL, STEP livrés.</p>
+        <a href="#contact" class="btn-outline" data-service="modelisation">Demander un devis</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 6 2 18 2 18 9"></polyline>
+            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+            <rect x="6" y="14" width="12" height="8"></rect>
+          </svg>
+        </div>
+        <h3>Impression 3D</h3>
+        <div class="service-divider"></div>
+        <p>Envoyez votre fichier STL, recevez votre pièce imprimée directement chez vous. FDM, livraison à domicile.</p>
+        <a href="#contact" class="btn-outline" data-service="impression">Envoyer un fichier</a>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+          </svg>
+        </div>
+        <h3>Maintenance Informatique</h3>
+        <div class="service-divider"></div>
+        <p>Réparation, entretien et nettoyage de PC et consoles. Diagnostic offert, devis avant toute intervention.</p>
+        <a href="#contact" class="btn-outline" data-service="maintenance">Prendre rendez-vous</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── RÉALISATIONS ── -->
+  <section id="realisations" class="realisations">
+    <h2 class="section-title">Réalisations</h2>
+    <div class="filter-bar" role="group" aria-label="Filtrer les projets">
+      <button class="filter-btn active" data-filter="all">Tout</button>
+      <button class="filter-btn" data-filter="dev">Dev</button>
+      <button class="filter-btn" data-filter="3d">3D</button>
+    </div>
+    <div class="realisations-grid" id="realisationsGrid">
+      <div class="cards-loading">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact" class="contact">
+    <h2 class="section-title">Demander un devis</h2>
+    <p class="contact-sub">Décrivez votre besoin, je vous réponds sous 24h.</p>
+
+    <div class="contact-gate-wrapper">
+
+      <!-- Overlay gate (visible tant que non connecté) -->
+      <div id="contactLoginGate" class="contact-gate">
+        <p class="gate-title">Connectez-vous pour envoyer un message</p>
+        <p class="gate-sub">Votre email Google vérifié me permet de vous recontacter de façon sûre.</p>
+        <div id="googleSignInBtn"></div>
+        <p id="authError" class="auth-error" hidden>Impossible de charger Google Sign-In. Vérifiez votre connexion ou désactivez votre bloqueur de publicités.</p>
+      </div>
+
+      <!-- Contenu flouté tant que non connecté -->
+      <div id="contactContent" class="contact-content contact-content--locked">
+
+        <!-- Barre utilisateur -->
+        <div id="contactUserBar" class="contact-user-bar">
+          <div class="user-info">
+            <img id="userAvatar" src="" alt="Avatar" class="user-avatar">
+            <span id="userName" class="user-name"></span>
+            <span class="user-badge">Vérifié</span>
+          </div>
+          <button id="logoutBtn" class="btn-logout" type="button">Se déconnecter</button>
+        </div>
+
+        <!-- Formulaire -->
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <input type="text" id="fname" name="name" placeholder="Votre nom" required readonly>
+            </div>
+            <div class="form-field">
+              <input type="email" id="femail" name="email" placeholder="Votre email" required readonly>
+            </div>
+          </div>
+          <div class="form-field">
+            <select name="service" id="fservice" required>
+              <option value="" disabled selected>Type de prestation</option>
+              <option value="dev">Développement Web</option>
+              <option value="modelisation">Modélisation 3D</option>
+              <option value="impression">Impression 3D (précisez votre fichier par email)</option>
+              <option value="maintenance">Maintenance Informatique</option>
+              <option value="autre">Autre</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <input type="text" name="subject" id="fsubject" placeholder="Sujet">
+          </div>
+          <div class="form-field">
+            <textarea name="message" id="fmessage" placeholder="Décrivez votre projet ou besoin..." rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary" id="submitBtn">Envoyer le message</button>
+        </form>
+
+      </div><!-- /contactContent -->
+    </div><!-- /contact-gate-wrapper -->
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="footer-inner">
+      <span>© 2025 Bastien Exposito</span>
+      <div class="footer-links">
+        <a href="https://www.linkedin.com/in/bastien-exposito/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/jahaa69" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./assets/env.js"></script>
+  <script src="assets/script.js"></script>
 </body>
 </html>
